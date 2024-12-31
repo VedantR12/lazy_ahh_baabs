@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@sakshiim</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6aab89d5f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="name">
+            <a href="#">@sakshiim</a>
+        </div>
+        <div class="item">
+            <a href="index.html">Home</a>
+            <a href="gallery/gallery.html">Gallery</a>
+            <a href="playlist/playlist.html">Playlist</a>
+        </div>
+    </div>
+   <div class="main">
+        <div class="wish">
+            <h1>Happy Birthday Baabs!</h1>
+            <p>Wishing you a veryyyy happy birthday.</p>
+        </div>
+    </div>
+    
+    <button id="music-control"><i class="fa-solid fa-play"></i></button>
+    <audio id="bg-music" src="50.mp3"></audio>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        const musicControl = document.getElementById('music-control');
+
+        const icon = musicControl.querySelector('i');
+
+        musicControl.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                icon.className = 'fas fa-pause';
+            } else {
+                music.pause();
+                icon.className = 'fas fa-play';
+            }
+        });
+    </script>
+    <div class="bg">
+        <div class="up">
+            <div class="img">
+                <img src="11.jpg">
+            </div>
+            <div class="img">
+                <img src="12.jpg">
+            </div>
+            <div class="img">
+                <img src="13.jpg">
+            </div>
+            <div class="img">
+                <img src="14.jpg">
+            </div>
+            <div class="img">
+                <img src="15.jpg">
+            </div>
+            <div class="img">
+                <img src="16.jpg">
+            </div>
+            <div class="img">
+                <img src="17.jpg">
+            </div>
+        </div>
+        <div class="up">
+            <div class="img">
+                <img src="18.jpg">
+            </div>
+            <div class="img">
+                <img src="19.jpg">
+            </div>
+            <div class="img">
+                <img src="110.jpg">
+            </div>
+            <div class="img">
+                <img src="2.jpg">
+            </div>
+            <div class="img">
+                <img src="4.jpg">
+            </div>
+            <div class="img">
+                <img src="16.jpg">
+            </div>
+            <div class="img">
+                <img src="15.jpg">
+            </div>
+        </div> 
+        
+    </div>
+
+</body>
+
+</html>
